@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+	git branch
+else
+	branch_name="dev/$USER/$1"
+	git checkout -b "$branch_name"
+fi
